@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Starbucks website landing page</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="circle"></div>
+        <header class="header container">
+            <a href="#">
+                <img src="img/logo.png" class="logo" alt="logo">
+            </a>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <main>
+            <article class="content container">
+                <div class="content-textbox">
+                    <h1 class="content-head">It's not just coffee <br> It's <span>Starbucks</span></h1>
+                    <div class="content-text">
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>                
+                    </div>
+                    <a href="#" class="content-btn">
+                        Learn More
+                    </a>
+                </div>
+                <section class="media">
+                    <div class="img-box">
+                        <img src="img/img1.png" alt="Starbucks" class="starbucks">
+                    </div>
+                </section>
+            </article>
+            <section class="slider container">
+                <ul>
+                    <li><img src="img/thumb1.png" onclick="imgSlider('img/img1.png'); changeCircleColor('#017143')" alt=""></li>
+                    <li><img src="img/thumb2.png" onclick="imgSlider('img/img2.png'); changeCircleColor('#eb7495')" alt=""></li>
+                    <li><img src="img/thumb3.png" onclick="imgSlider('img/img3.png'); changeCircleColor('#b752b1')" alt=""></li>
+                </ul>
+            </section>
+            <aside>
+                <ul class="social">
+                    <li><a href="#" target="_blank"><img src="img/facebook.png" alt="facebook"></a></li>
+                    <li><a href="#" target="_blank"><img src="img/twitter.png" alt="twitter"></a></li>
+                    <li><a href="#" target="_blank"><img src="img/instagram.png" alt="instagram"></a></li>
+                </ul>
+            </aside>      
+        </main>
+    </div>
+    <script src="main.js">
+
+    </script>
+</body>
+</html>
